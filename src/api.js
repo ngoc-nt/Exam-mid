@@ -9,7 +9,7 @@ const useGenres = () => {
     const fetchGenres = async () => {
       const genresData = await fetchDataFromApi('genre/movie/list');
       if (genresData) {
-        setGenres(genresData);
+        setGenres(genresData.genres);
       }
     };
 
