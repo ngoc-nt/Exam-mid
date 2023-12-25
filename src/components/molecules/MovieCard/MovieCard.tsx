@@ -19,7 +19,6 @@ const MovieCard: React.FC<TMovieCard> = ({ releaseMovie }) => {
           <div className={`me-2 p-1 ${styles.quality}`}>{releaseMovie && releaseMovie.popularity}</div>
           <div className={`ms-1 p-1 d-flex align-items-center ${styles.info}`}>
             <Image src='/assets/img/icon-clock.svg' alt='Clock' />
-            <div className='ms-1'>{releaseMovie && releaseMovie.tagline}</div>
           </div>
         </div>
       </div>
